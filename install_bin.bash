@@ -27,6 +27,12 @@ else
     exit 1
 fi
 
+# binディレクトリにlibvoicevox_core.dylibがあるか確認
+if [  -e bin/libvoicevox_core.dylib ]; then
+    echo "libvoicevox_core.dylib is already installed"
+    exit 0
+fi
+
 binary="download-$os-$arch"
 
 curl -sSfL https://github.com/VOICEVOX/voicevox_core/releases/latest/download/${binary} -o download
