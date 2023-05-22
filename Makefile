@@ -3,6 +3,6 @@ BIN_EXISTS="$(shell ls ${BIN_DIR} | grep "libvoicevox_core.dylib" )"
 
 .PHONY: build
 build:
-	chmod +x ./install_bin.sh
-	./install_bin.sh
+	chmod +x ./install_bin.bash
+	./install_bin.bash
 	go build
