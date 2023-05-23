@@ -1,3 +1,3 @@
-module github.com/bokutotu/Voicevox.go
+module github.com/bokutotu/voicevox
 
 go 1.19
